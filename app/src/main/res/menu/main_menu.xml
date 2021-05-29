@@ -3,20 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/item_1"
-        android:title="Menu 1"
-        app:showAsAction="never"
+        android:title="@string/hamburger_menu"
+        android:icon="@drawable/ic_baseline_menu_24"
+        app:showAsAction="ifRoom"
         />
+
+<!--    <item-->
+<!--        android:id="@+id/item_2"-->
+<!--        android:title="Menu 2"-->
+<!--        app:showAsAction="never"-->
+<!--        />-->
 
     <item
         android:id="@+id/item_2"
-        android:title="Menu 2"
-        app:showAsAction="never"
-        />
-
-    <item
-        android:id="@+id/item_3"
-        android:title="Savings"
-        android:icon="@drawable/ic_outline_savings_24"
+        android:title="@string/notifications"
+        android:icon="@drawable/ic_outline_notifications_24"
         app:showAsAction="ifRoom"
         />
 </menu>
