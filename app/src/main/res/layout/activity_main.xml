@@ -34,11 +34,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/standard_margin"
+        android:text="Olá, Jessyca"
         android:textColor="@color/white"
         android:textSize="@dimen/large_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        android:text="Olá, Jessyca" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <TextView
         android:id="@+id/tv_agency"
@@ -46,24 +46,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/standard_margin"
         android:layout_marginTop="@dimen/small_margin"
+        android:text="Ag 3861"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_user"
-        android:text="Ag 3861" />
+        app:layout_constraintTop_toBottomOf="@id/tv_user" />
 
     <TextView
         android:id="@+id/tv_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/small_margin"
+        android:text="Cc 02009247-8"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/tv_agency"
-        app:layout_constraintTop_toTopOf="@id/tv_agency"
-        android:text="Cc 02009247-8" />
+        app:layout_constraintTop_toTopOf="@id/tv_agency" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_account_info"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/standard_margin"
@@ -113,12 +114,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/large_margin"
+                android:text="R$ 14.279,95"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/extra_large_text"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_update_icon"
-                android:text="R$ 14.279,95" />
+                app:layout_constraintTop_toBottomOf="@+id/iv_update_icon" />
 
             <TextView
                 android:id="@+id/tv_balance_limit"
@@ -134,11 +135,11 @@
                 android:id="@+id/tv_balance_limit_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="R$ 18.317,95"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/small_text"
                 app:layout_constraintStart_toEndOf="@id/tv_balance_limit"
-                app:layout_constraintTop_toTopOf="@id/tv_balance_limit"
-                android:text="R$ 18.317,95" />
+                app:layout_constraintTop_toTopOf="@id/tv_balance_limit" />
 
             <View
                 android:id="@+id/view_card_divisor_line"
@@ -163,5 +164,169 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_options"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_account_info">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="start"
+            android:foregroundGravity="left"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_pix"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/standard_margin"
+                app:cardElevation="@dimen/extra_small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_pix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/standard_margin"
+                        android:text="@string/pix"
+                        app:drawableTopCompat="@drawable/ic_santander_pix"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_pay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="@dimen/standard_margin"
+                app:cardElevation="@dimen/extra_small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cv_pix"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/standard_margin"
+                        android:text="@string/pay"
+                        app:drawableTopCompat="@drawable/ic_santander_barcode" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_transfer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/standard_margin"
+                app:cardElevation="@dimen/extra_small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cv_pay"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/standard_margin"
+                        android:text="@string/transfer"
+                        app:drawableTopCompat="@drawable/ic_santander_outcomes_24dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_charge"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/standard_margin"
+                app:cardElevation="@dimen/extra_small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cv_transfer"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/standard_margin"
+                        android:text="@string/charge"
+                        app:drawableTopCompat="@drawable/ic_santander_incomes_24dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_receipts"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginEnd="@dimen/standard_margin"
+                app:cardElevation="@dimen/extra_small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cv_charge"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/standard_margin"
+                        android:text="@string/receipts"
+                        app:drawableTopCompat="@drawable/ic_santander_receipts_24dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

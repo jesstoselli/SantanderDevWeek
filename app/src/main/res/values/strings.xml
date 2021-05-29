@@ -6,4 +6,9 @@
     <string name="saldo_disponivel">Saldo disponível</string>
     <string name="balance_limit">Saldo + Limite:  </string>
     <string name="ver_extrato">Ver extrato</string>
+    <string name="pix">Pix</string>
+    <string name="pay">Pagar</string>
+    <string name="transfer">Transferir</string>
+    <string name="charge">Cobrar</string>
+    <string name="receipts">Comprovantes</string>
 </resources>
