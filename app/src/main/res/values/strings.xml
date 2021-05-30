@@ -3,12 +3,13 @@
     <string name="notifications">Notifications</string>
     <string name="hamburger_menu">Hamburger Menu</string>
     <string name="todo">TODO</string>
-    <string name="saldo_disponivel">Saldo disponível</string>
+    <string name="balance_available">Saldo disponível</string>
     <string name="balance_limit">Saldo + Limite:  </string>
-    <string name="ver_extrato">Ver extrato</string>
+    <string name="check_balance">Ver extrato</string>
     <string name="pix">Pix</string>
     <string name="pay">Pagar</string>
     <string name="transfer">Transferir</string>
     <string name="charge">Cobrar</string>
     <string name="receipts">Comprovantes</string>
+    <string name="card_ended_in">Cartão Final</string>
 </resources>
