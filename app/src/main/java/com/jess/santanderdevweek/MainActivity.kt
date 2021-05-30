@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        supportActionBar?.title = null
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -23,12 +24,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.item_1 -> {
+            R.id.item_notification -> {
                 Log.d("CLICK", "Item 1 clicked")
-                true
-            }
-            R.id.item_2 -> {
-                Log.d("CLICK", "Item 2 clicked")
                 true
             }
             else -> super.onOptionsItemSelected(item)

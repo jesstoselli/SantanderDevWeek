@@ -2,22 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/item_1"
-        android:title="@string/hamburger_menu"
-        android:icon="@drawable/ic_baseline_menu_24"
-        app:showAsAction="ifRoom"
-        />
-
-<!--    <item-->
-<!--        android:id="@+id/item_2"-->
-<!--        android:title="Menu 2"-->
-<!--        app:showAsAction="never"-->
-<!--        />-->
-
-    <item
-        android:id="@+id/item_2"
+        android:id="@+id/item_notification"
         android:title="@string/notifications"
         android:icon="@drawable/ic_outline_notifications_24"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 </menu>
