@@ -13,4 +13,5 @@
     <string name="receipts">Comprovantes</string>
     <string name="card_ended_in">Cartão Final</string>
     <string name="santander_logo">Santander Logo</string>
+    <string name="hello">Olá,</string>
 </resources>
