@@ -6,7 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.jess.santanderdevweek.R
 import com.jess.santanderdevweek.data.Account
@@ -48,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getClientAccount() {
-        mainViewModel.getClientAccount().observe(this, Observer {
+        mainViewModel.getClientAccount().observe(this, {
             onBindView(it)
         })
     }
